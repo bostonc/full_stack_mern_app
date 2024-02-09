@@ -1,0 +1,14 @@
+.search {
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	#formTypeSwitch {
+		width: 100px;
+		height: 50px;
+		.form-check-label {
+			float: left;
+		}
+	}
+}

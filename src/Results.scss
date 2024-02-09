@@ -1,0 +1,16 @@
+.results {
+	td,	th {
+		padding-right: 8px;
+	}
+}
+
+.pagination {
+	margin-top: 10px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.small {
+	font-size: 10px;
+}
