@@ -3,13 +3,27 @@
 
 A lightweight, full-stack application including client, server, and database to create a sample scheduling platform.
 
-## To Run
+## To Run Client
 
 1. Clone repository
 2. Ensure Node, npm, and nvm are installed
 3. From the project root, run `nvm use`
-4. Install packages with `npm i` (use `--no-bin-links` for wsl)
-5. Run with `npm run dev` and visit http://127.0.0.1:5173/ to see the page.
+4. `cd` into `client` folder
+5. Install packages with `npm i` (use `--no-bin-links` for wsl)
+6. Run with `npm run dev` and visit http://127.0.0.1:5173/ to see the page.
+
+## To Run Server
+
+1. Clone repository
+2. Ensure Node, npm, and nvm are installed
+3. From the project root, run `nvm use`
+4. `cd` into `server` folder
+5. Install packages with `npm i` (use `--no-bin-links` for wsl)
+6. Run with `npm run dev` and visit http://127.0.0.1:3000/ to see the page.
+
+## To Run Database
+
+1. TBD
 
 ## Technical Notes
 
