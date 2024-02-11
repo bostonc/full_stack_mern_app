@@ -1,23 +1,38 @@
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import { Link, Route, Routes, BrowserRouter } from "react-router-dom";
 import './App.scss';
-import { ControlledForm } from './Form';
+import { CoachPage } from "./CoachPage";
+import { StudentPage } from "./StudentPage";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>GitHub API Test</h1>
-      <ControlledForm />
-    </>
+    <BrowserRouter>
+        <h1>Scheduling Platform Demo</h1>
+        <nav>
+            <span className='navbtn'>
+                <Link to="/coach">Coach</Link>
+            </span>
+            <span className='navbtn'>
+                <Link to="/student">Student</Link>
+            </span>
+        </nav>
+        <Routes>
+            <Route path="/" element={<SplashPage />} />
+            <Route path="/coach" element={<CoachPage />} />
+            <Route path="/student" element={<StudentPage />} />
+        </Routes>
+    </BrowserRouter>
+  )
+}
+
+const SplashPage = () => {
+  return (
+    <div>
+      <h2>Welcome to the Scheduling Platform</h2>
+      <p>
+        This is a simple scheduling platform that allows students to book slots with coaches.
+        <br/>To begin, please indicate whether you are a coach or a student.
+      </p>
+    </div>
   )
 }
 

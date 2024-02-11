@@ -7,8 +7,7 @@ const slotSchema = new Schema(
     student: String,
     notes: String,
     satisfaction: Number,
-    startDate: { type: Date, required: true },
-    endDate: { type: Date, required: true },
+    startDatetime: { type: Date, required: true },
   },
   {
     timestamps: true,

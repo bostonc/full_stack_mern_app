@@ -25,8 +25,8 @@ app.get("/test", (req, res) => {
 
 app.get('/', getSlots);
 app.post('/', addSlot);
-app.patch('/:id', updateSlot);
-app.delete('/:id', deleteSlot);
+app.patch('/', updateSlot);
+app.delete('/', deleteSlot);
 
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
