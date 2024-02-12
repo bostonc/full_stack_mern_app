@@ -1,5 +1,5 @@
 # Scheduling Platform Sample
-### with React + TypeScript + Vite
+### with React + TypeScript + Vite + MongoDB
 A lightweight, full-stack application including client, server, and database to create a sample scheduling platform.
 
 ## 1. To Run Database
